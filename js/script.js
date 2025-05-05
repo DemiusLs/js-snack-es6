@@ -52,4 +52,22 @@ for (i = 0; i < squadreCalcio.length; i++) {
     }
 }
 
-console.log(newSquadre)
+console.log(newSquadre);
+
+
+// Esercizio 3
+
+function returnInterval(array, num1, num2) {
+    const retArray = [];
+    for (i = 0; i < array.length; i++) {
+
+        if ((i > num1) && (i <= num2)) {
+
+            retArray.push(array[i])
+        }
+    }
+    return retArray;
+}
+
+let testArr = [1, 2, 3, 4, 5, 6, 7, 8, 22, 34, 55, 100]
+console.log(returnInterval(testArr, 2, 7))
